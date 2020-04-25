@@ -1,7 +1,15 @@
+import 'package:flute_music_player/flute_music_player.dart';
 import 'package:flutter/material.dart';
 import 'package:umusic_player/widgets/TextHeading.dart';
 
-class MusicFragment extends StatelessWidget {
+class MusicFragment extends StatefulWidget {
+  @override
+  _MusicFragmentState createState() => _MusicFragmentState();
+}
+
+class _MusicFragmentState extends State<MusicFragment> {
+  var _songs;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,7 +24,7 @@ class MusicFragment extends StatelessWidget {
                 leading: CircleAvatar(
                   child: Icon(Icons.play_arrow),
                 ),
-                title: Text("Sky blue is love"),
+                title: Text("_songs[index].title"),
                 subtitle: Text("Anthony Jonas"),
                 trailing: Text("5:01"),
                 onTap: null,

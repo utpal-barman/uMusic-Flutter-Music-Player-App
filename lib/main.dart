@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'uMusic Player',
       theme: ThemeData(
+        brightness: Brightness.light,
         primarySwatch: Colors.pink,
       ),
       home: AppScreen(),
